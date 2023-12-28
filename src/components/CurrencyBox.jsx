@@ -8,9 +8,9 @@ const CurrencyBox = ({ setCurrencyName, currencyName }) => {
   useEffect(() => {
     const getData = async () => {
       const resp = await axios.get(
-        "http://data.fixer.io/api/latest?access_key=4674ad576e05a9d276f4508712e51c7d"
+        "https://v6.exchangerate-api.com/v6/4528ed4c290e470da21c792e/latest/USD"
       );
-      const data = resp.data.rates;
+      const data = resp.data.conversion_rates;
       setCurrencyArray(
         Object.entries(data).map(([name, rate]) => ({
           name,
