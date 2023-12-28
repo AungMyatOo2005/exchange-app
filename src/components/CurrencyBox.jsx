@@ -24,7 +24,7 @@ const CurrencyBox = ({ setCurrencyName, currencyName }) => {
     setIsActive(false);
   });
   return (
-    <div className="w-[250px]">
+    <div className="w-full">
       {!isActive ? (
         <div
           className="flex items-center gap-2 bg-[#27283E] rounded-md py-2 px-4"

@@ -6,14 +6,14 @@ const Amount = () => {
   const [amount, setAmount] = useState(100);
   const { fromCurrency } = useContext(GlobalContext);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <label
         htmlFor="amount"
         className="text-white font-roboto mb-2 text-[18px]"
       >
         Amount
       </label>
-      <div className="bg-[#27283E] rounded-md flex items-center px-4 w-[250px]">
+      <div className="bg-[#27283E] rounded-md flex items-center px-4 w-full">
         <input
           id="amount"
           type="number"

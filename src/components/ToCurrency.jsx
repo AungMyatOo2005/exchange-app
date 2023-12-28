@@ -14,7 +14,7 @@ const ToCurrency = () => {
     }
   }, [currencyArray, currencyName, setToCurrency]);
   return (
-    <div className="flex flex-col cursor-pointer select-none">
+    <div className="flex flex-col cursor-pointer select-none w-full">
       <label className="text-white font-roboto mb-2 text-[18px]">To</label>
       <CurrencyBox
         setCurrencyName={setCurrencyName}
